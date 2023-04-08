@@ -1,0 +1,232 @@
+form {
+  position: relative;
+  width: 29%;
+  margin: 30px auto 20px 45%;
+  background: #f5f1f1;
+  padding: 15px;
+  border-radius: 7px;
+  border: 1px solid black;
+  /* box-shadow: 0 1px 5px rgb(138, 137, 137); */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  background: #f5f1f1;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  overflow: hidden;
+  height: auto;
+}
+
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f3f1f3;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+
+}
+
+form button:hover {
+  transform: translateY(-0.33em);
+
+}
+
+form button:active {
+  transform: translateY(0);
+}
+
+/* NewNote CSS */
+.NewNoteContainer {
+  margin: 70px 40px 40px 35%;
+  display: flex;
+  column-gap: 100px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 50px;
+  align-items: center;
+
+
+}
+
+.newnote {
+  position: relative;
+  width: calc(100% / 3);
+  height: auto;
+  margin: 0px;
+  background: #f5f1f1;
+  padding: 15px;
+  border-radius: 7px;
+  border: transparent;
+  /* border: 1px solid black; */
+}
+
+.bttn {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  /* margin-top: 1.5em; */
+  position: relative;
+
+
+}
+
+.bttn button[data-tooltip]:hover:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 5px);
+  left: auto;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #161616a8;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.bttn button {
+  background: none;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  opacity: 0;
+  color: #555555;
+  transition: opacity 0.4s ease;
+
+}
+
+.bttn button:hover {
+  background: rgba(170, 170, 170, 0.397);
+  transition: 0.4s;
+  opacity: 0.5;
+  -webkit-backdrop-filter: blur(0px) saturate(0%);
+  background-color: rgba(255, 255, 255, 0.81);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: #1b1b1b;
+
+}
+
+.newnote:hover button {
+
+  opacity: 1;
+}
+
+.newnote:hover {
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.newnote input,
+textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  background: #f5f1f1;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  overflow: hidden;
+  height: auto;
+  border: transparent;
+}
+
+h3,
+p {
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  word-wrap: break-word;
+
+}
+
+h3 {
+  text-align: center;
+
+}
+
+.colors {
+  position: absolute;
+  left: 69%;
+
+  
+}
+
+.colors button {
+  opacity: 1;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+
+}
+
+.purple {
+  background-color: #54015f;
+  border: 0px solid #54015f;
+}
+
+.pink {
+  background-color: #f0257a;
+  border: 0px solid #f0257a;
+}
+
+.blue {
+  background-color: #3797ff;
+  border: 1px solid #3797ff;
+}
+
+.save {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5f1f1;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75em;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.save:hover {
+  transform: translateY(-0.33em);
+}
+
+.save:active {
+  transform: translateY(0);
+}
+
+.li {
+  display: none;
+}
+
+p #time {}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}

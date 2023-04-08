@@ -1,0 +1,145 @@
+nav {
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 23%;
+    
+}
+li {
+    /* border-width: 13em; */
+    list-style-type: none;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 25px;
+    text-align: center;
+  
+   
+}
+li span {
+    text-align: center;
+    margin-left: 50px;
+    
+   
+  }
+
+a {
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c5959ea;
+    background: none;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 10px;
+  
+}
+
+.dark {
+    background-color: #333;
+
+}
+
+.dark nav a {
+    color: white;
+}
+
+a {
+    /* color: black; */
+    margin: 0;
+  position: relative;
+
+}
+nav li a {
+    padding: 10px;
+    border-width: 100%;
+  }
+ /* nav li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; */
+
+    /* transition: width 0.3s ease-in-out; */
+    /* z-index: -1; */
+  
+  /* nav li a:hover:before {
+    width: 100%;
+  } */
+  nav li a:hover {
+     
+    /* transition: color 0.3s ease-in-out;  */
+    /* background: rgba(19, 18, 18, 0.397); */
+  transition: 0.4s;
+  /* opacity: 0.5; */
+  /* -webkit-backdrop-filter: blur(0px) saturate(0%); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(77, 77, 77, 0.116);
+  border-radius: 12px;
+  color: #000000;
+  }
+
+
+
+.switch {
+    margin-top: 50px;
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    margin-left: 90px;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    --background:  #1d1c1c;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+    background: var(--background);
+    transition: .3s;
+}
+
+input:checked+.slider {
+    background-color:  #222121;
+}
+
+input:checked+.slider:before {
+    transform: translateX(100%);
+    
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+}
